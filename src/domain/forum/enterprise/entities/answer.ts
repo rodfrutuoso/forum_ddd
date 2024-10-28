@@ -9,6 +9,7 @@ export interface AnswerProps {
   createdAt: Date;
   updateAt?: Date;
 }
+
 export class Answer extends Entity<AnswerProps> {
   static create(
     props: Optional<AnswerProps, "createdAt">,
